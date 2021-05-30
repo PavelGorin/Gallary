@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>Галерея</title>
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+      <p class="profile__name">Галерея</p>
+    </header>
+    <section class="elements">
+    </section>
+  </div>
+  <footer class="footer">
+    <p class="footer__copyright">&copy;2021 Gorin Pavel</p>
+  </footer>
+
+  <section class="popup popup__image">
+    <div class="popup__container">
+      <div class="popup__image-block">
+        <img class="popup__picture" src="" alt="">
+        <button type="button" class="element__like popup__image-like"><img class="popup__like-pic"
+            src="./images/element__like.svg" alt="лайк"></button>
+        <input type="text" class="popup__input-comment" placeholder="Комментарий">
+        <button type="button" class="popup__button-comment">Добавить</button>
+        <p class="popup__picture-name"></p>
+      </div>
+      <button type="button" class="popup__close-button popup__close-button_image"></button>
+    </div>
+  </section>
+
+  <template class="card">
+    <div class="element">
+      <button class="element__picture"><img class="element__image" src="" alt=""></button>
+      <div class="element__info">
+        <p class="element__name"></p>
+      </div>
+    </div>
+  </template>
+  <script src="./scripts/script.js"></script>
+</body>
+
+</html>
